@@ -19,25 +19,19 @@ class Program
         if (alcoolOuGasolina.ToLower() == "alcool")
         {
             if (quantosLitros <= 20)
-            {
-                desconto = litroAlcool * 0.03;
-            }
+              desconto = litroAlcool * 0.03;
             else
-            {
                 desconto = litroAlcool * 0.05;
-            }
+            
             precoTotal = (litroAlcool * quantosLitros) - desconto;
         }
         else if (alcoolOuGasolina.ToLower() == "gasolina")
         {
             if (quantosLitros <= 20)
-            {
-                desconto = litroGasolina * 0.04;
-            }
+                 desconto = litroGasolina * 0.04;
             else
-            {
                 desconto = litroGasolina * 0.06;
-            }
+            
             precoTotal = (litroGasolina * quantosLitros) - desconto;
         }
         else
