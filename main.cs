@@ -4,8 +4,8 @@ class Program
 {
     public static void Main(string[] args)
     {
-        double litroGasolina = 3.30;
-        double litroAlcool = 2.90;
+        double literGasoline = 3.30;
+        double literAlcohol = 2.90;
 
         Console.Write("Alcool ou Gasolina? ");
         string alcoolOuGasolina = Console.ReadLine();
@@ -19,20 +19,20 @@ class Program
         if (alcoolOuGasolina.ToLower() == "alcool")
         {
             if (quantosLitros <= 20)
-              desconto = litroAlcool * 0.03;
+              desconto = literAlcohol * 0.03;
             else
-                desconto = litroAlcool * 0.05;
+                desconto = literAlcohol * 0.05;
             
-            precoTotal = (litroAlcool * quantosLitros) - desconto;
+            precoTotal = (literAlcohol * quantosLitros) - desconto;
         }
         else if (alcoolOuGasolina.ToLower() == "gasolina")
         {
             if (quantosLitros <= 20)
-                 desconto = litroGasolina * 0.04;
+                 desconto = literGasoline * 0.04;
             else
-                desconto = litroGasolina * 0.06;
+                desconto = literGasoline * 0.06;
             
-            precoTotal = (litroGasolina * quantosLitros) - desconto;
+            precoTotal = (literGasoline * quantosLitros) - desconto;
         }
         else
         {
